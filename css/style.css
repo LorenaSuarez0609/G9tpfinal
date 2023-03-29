@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    font-family: 'Righteous', cursive;
+    margin: 10px;
+}
+body{
+    background-color: rgb(160, 182, 230);
+   
+}
+header{
+    background-color: rgb(28, 28, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgb(3, 18, 34);
+
+}
+h1{
+    color:white;
+    
+
+}
+form{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 5px rgb(108, 14, 171) solid;
+    border-radius: 10px;
+    position:absolute;
+    padding: auto;
+}
+button{
+    font-size:15px;
+    font-family:'Righteous', cursive;
+    font-weight:bold;
+    color:white;
+    background:#086dd1;
+    border-radius: 5px;
+    width:100px;
+    height:50px;
+
+}
+.caja{
+    border: 5px solid rgb(92, 116, 223);
+    border-radius: 10px;
+    height: 600 px;
+    width: 700px;
+}
+input,select{
+    font-size: 20px;
+}

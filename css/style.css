@@ -6,18 +6,23 @@
 
 }
 body{
-    background-color: rgb(160, 182, 230);
-   
+    background-color: #F9FDFF;
 }
 header{
-    background-color: rgb(28, 28, 153);
-    padding: 3vh 5vw;
+    background-color: #3D5A80;
+    padding: 20px;
     display: flex;
-    color:white;
-    justify-content: center;
+    color:#656565; 
+    justify-content: center; 
     border-radius: 20px;
-    box-shadow: 0px 5px 10px rgb(3, 18, 34);*/
+    box-shadow: 10px 10px 10px rgb(106, 171, 241);
 
+}
+
+img{
+    width: 50%;
+    height: 70px;
+    
 }
 
 main{
@@ -43,8 +48,8 @@ main form{
 main form .inputContainer{
     border: none;
     width: 100%;
-    color:white;
-    background-color: rgb(160, 182, 230);
+    color:rgb(161, 158, 158);
+    background-color: #F9FDFF;
     flex-direction: column;
     gap:1vh;
 
@@ -55,21 +60,13 @@ main form .inputContainer input, select{
     border-bottom: 1px solid black;
     padding:10px;
     font-size:18px;
-    background-color: rgb(160, 182, 230);
+    background-color: #F9FDFF;
 
 }
 
 
-img{
-    width: 80px;
-    height: 80px;
-    border: 10px rgb(108, 14, 171) solid;
-    border-radius: 10px;
-    position: relative;
-    
-}
 .btn-calcular{
-    background-color: #086dd1;
+    background-color: #3D5A80;
     color:white;
     border: 1px solid rgb(57, 102, 236);
     padding: 10px;
@@ -77,6 +74,7 @@ img{
     width:200px;
     height:50px;
     font-size: 18px;
+    
 
 }
 
@@ -93,8 +91,8 @@ main form .inputContainer{
 footer{
     padding: 3vh 5vw;
     text-align: center;
-    background-color: rgb(81, 81, 175);
-    color:rgb(44, 39, 39);
+    background-color: #3D5A80;
+    color:rgb(41, 41, 41);
 }
 .contenedorMascota{
     display:flex;

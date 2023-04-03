@@ -10,57 +10,59 @@
 <body>
     <header>
         <h1>Love Our Pets</h1>
-        <script src="./js/script.js"></script>
     </header>
-    <main>
+        <main>
         <img src="./img/descarga.png">
-        <form>
-            <div class="caja">
-                <div>
-                    <label for="nombreDueño"> Nombre del dueño</label>
-                    <input type="text" id="nombre" placeholder="cosme fulanito" required>
-                </div>
-                <div>
+        <h2>Aqui puedes cargar tus datos para saber IMC de tu mascota</h1>   
+        <form class="formularioUsuarios">
+            <div class="inputContainer">
+                <label for="nombreDueno"> Ingrese su Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" id="nombreDueno"  name="nombreDueno"required >
+            </div>
+            <div class="inputContainer">
                     <label for="email"> Direccion de Email </label>
-                    <input type="email" id="email" placeholder="direccion@gmail.com" required>
-                </div>    
-            <div>
-                <label for="nombreMascota"> Nombre de tu Mascota</label>
-                <input type="text" id="nombreMascota" placeholder="puppy" required>
+                    <input type="email" placeholder="direccion@gmail.com" required id="email" name="email" >
+            </div>    
+            <div class="inputContainer">
+                <label for="nombreMascota"> Nombre de su Mascota</label>
+                <input type="text" id="nombreMascota" placeholder="Ingrese el nombre de su mascota" required name="nombreMascota">
             </div>
-            <div>
-                <label for="tipoMascota"> Tipo de Mascota
-                    <select name="tipoMascota">
-                      <option>Perro</option>
-                      <option>Gato</option>
+            <div class="inputContainer">
+                <label for="tipoMascota"> Tipo de Mascota </label>
+                    <select name="tipoMascota" id="tipoMascota">
+                      <option value="perro">Perro</option>
+                      <option value="gato">Gato</option>
                     </select>
-                </label>
             </div>
-            <div>
-                <label for="tamañoMascota"> Tamaño
-                    <select name="tamañoMascota">
-                      <option>chico</option>
-                      <option>mediano</option>
-                      <option>grande </option>
-                    </select>
-                </label>
+            <div class="inputContainer">
+                    <label for="tamanoMascota"> Tamaño de tu mascota</label>
+                        <select name="tamanoMascota" id="tamanoMascota">
+                            <option value="chico">Chico</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="grande">Grande </option>
+                        </select>
+                    
             </div>
-            <div>
+            <div class="inputContainer">
                 <label for="peso"> Peso en Kilogramos</label>
                 <input type="number" id="peso" placeholder="10">
             </div>
-        </div>
-            <div>
-                <button class="btnCalcular">Calcular IMC</button>
-            </div>
-
+            <input type="submit" value = "Calcular IMC" class="btn-calcular">
+             
         </form>
+        <div id="contenedorMascota" class="contenedorMascota"></div>
     </main>
     <footer>
-        <h3> Presentacion Integrantes Grupo 9</h3>
+        <h3> Presentacion Integrantes Grupo 9 C 192 - Argentina Programa </h3>
+        <h4>Suyay mail@gmail.com</h2>
+        <h4>Lorena Suarez mail@gmail.com</h2>
+        <h4>Marcos mail@gmail.com</h2>
+        <h4>Lucas mail@gmail.com</h2>
+        <h4>Jorge mail@gmail.com</h2>
+
+
 
     </footer>
-
-
+    <script src="./js/script.js"></script>
 </body>
 </html>

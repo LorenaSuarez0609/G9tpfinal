@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     font-family: 'Righteous', cursive;
-    margin: 10px;
+    margin: 0px;
+    padding: 0px;
+
 }
 body{
     background-color: rgb(160, 182, 230);
@@ -9,60 +11,101 @@ body{
 }
 header{
     background-color: rgb(28, 28, 153);
+    padding: 3vh 5vw;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    color:white;
+    justify-content: center;
     border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0px 5px 10px rgb(3, 18, 34);
+    box-shadow: 0px 5px 10px rgb(3, 18, 34);*/
 
 }
-h1{
+
+main{
+    min-height: 90vh;
+    padding: 10vh 3vw;
+    display: flex;
+    flex-direction: column;
+    gap:10vh;
+    align-items: center;
+}
+
+main h2{
+    color: black;
+    text-align: center;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+    width: 70%;
+    
+}
+main form .inputContainer{
+    border: none;
+    width: 100%;
     color:white;
-    
+    background-color: rgb(160, 182, 230);
+    flex-direction: column;
+    gap:1vh;
+
 
 }
-form{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    
+main form .inputContainer input, select{
+    border:none;
+    border-bottom: 1px solid black;
+    padding:10px;
+    font-size:18px;
+    background-color: rgb(160, 182, 230);
+
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    
-}
+
 img{
-    width: 200px;
-    height: 200px;
-    border: 5px rgb(108, 14, 171) solid;
+    width: 80px;
+    height: 80px;
+    border: 10px rgb(108, 14, 171) solid;
     border-radius: 10px;
-    position:absolute;
-    padding: auto;
+    position: relative;
+    
 }
-button{
-    font-size:15px;
-    font-family:'Righteous', cursive;
-    font-weight:bold;
+.btn-calcular{
+    background-color: #086dd1;
     color:white;
-    background:#086dd1;
+    border: 1px solid rgb(57, 102, 236);
+    padding: 10px;
     border-radius: 5px;
-    width:100px;
+    width:200px;
     height:50px;
+    font-size: 18px;
 
 }
-.caja{
-    border: 5px solid rgb(92, 116, 223);
-    border-radius: 10px;
-    height: 600 px;
-    width: 700px;
-}
+
 input,select{
-    font-size: 20px;
+    font-size: 18px;
+}
+
+main form .inputContainer{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    gap:1vh;
+}
+footer{
+    padding: 3vh 5vw;
+    text-align: center;
+    background-color: rgb(81, 81, 175);
+    color:rgb(44, 39, 39);
+}
+.contenedorMascota{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+}
+.imc-card{
+    background-color: aquamarine;
+    color:write;
+    padding:10px;
+    width: 300px;
+    border-radius: 5px;
 }

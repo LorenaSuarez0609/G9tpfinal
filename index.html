@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="./svg/Imagen mascotas y título.svg" alt="Love Our Pets">
+        <img src="./svg/Imagen mascotas y título.svg" alt="Love Our Cats">
     </header>
         <main>
-        <h2>Aqui puedes cargar tus datos para saber IMC de tu mascota</h1>   
+            <div class="encabezadoCeleste">
+                <nav>
+                    <a href="./index.html">Home</a>
+                    <a href="./razas.html">Razas</a>
+                    <a href="">Contacto</a>
+    
+                </nav>
+            </div>
+        <h1>Completa los datos para saber IMC de tu gato</h1>   
         <form class="formularioUsuarios">
             <div class="inputContainer">
                 <label for="nombreDueno"> Ingrese su Nombre</label>
@@ -51,17 +60,36 @@
         </form>
         <div id="contenedorMascota" class="contenedorMascota"></div>
     </main>
-    <footer>
-        <h3> Presentacion Integrantes Grupo 9 C 192 - Argentina Programa </h3>
-        <h4>Maria Suyay Videla Sanchez mail@gmail.com</h2>
-        <h4>Lorena Suarez casa.suarez1948@gmail.com</h2>
-        <h4>Marcos Garcia marcosgarcia3105@gmail.com</h2>
-        <h4>Lucas Garis mail@gmail.com</h2>
-        <h4>Jorge Siñaniz Valencia mail@gmail.com</h2>
+    <footer class="piePagina">
+            <div class="contenedorPie">
+                <div class="contenedor-row">
+                    <div class="box">
+                        <h2> Nosotros - Grupo 9 - C 192</h2>
+                        <a href="#">Marcos Garcia marcosgarcia3105@gmail.com</a>
+                        <a href="#">Maria Suyay Videla Sanchez mail@gmail.com</a>
+                        <a href="#">Lorena Suarez casa.suarez1948@gmail.com</a>
+                        <a href="#">Lucas Garis mail@gmail.com</a>
+                        <a href="#">Jorge Siñaniz Valencia mail@gmail.com</a>
+                        
+                    </div>
+    
+                    <div class="box">
+                        <h2>Contactanos</h2>
+                    </div>
+    
+                    <div class="box-redes">
+                        <h2>¡Seguinos!</h2>
+                        <div  class="redes">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-youtube"></i>
+                                <i class="bi bi-twitter"></i>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-
-
-    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>

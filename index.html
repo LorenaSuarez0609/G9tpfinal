@@ -10,85 +10,72 @@
 </head>
 <body>
     <header>
-        <img src="./svg/Imagen mascotas y título.svg" alt="Love Our Cats">
+        <img src="./svg/Love our cats.svg" alt="Love Our Cats">
     </header>
         <main>
             <div class="encabezadoCeleste">
                 <nav>
                     <a href="./index.html">Home</a>
                     <a href="./razas.html">Razas</a>
-                    <a href="">Contacto</a>
+                    <a href="./sobre.html">Sobre Nosotros</a>
     
                 </nav>
             </div>
         <h1>Completa los datos para saber IMC de tu gato</h1>   
         <form class="formularioUsuarios">
             <div class="inputContainer">
-                <label for="nombreDueno"> Ingrese su Nombre</label>
-                <input type="text" placeholder="Ingrese su nombre" id="nombreDueno"  name="nombreDueno"required >
+                <label for="nombreMascota"> Nombre de tu Gato</label>
+                <input type="text" id="nombreMascota" placeholder="Canela" required name="nombreMascota">
             </div>
             <div class="inputContainer">
-                    <label for="email"> Direccion de Email </label>
-                    <input type="email" placeholder="direccion@gmail.com" required id="email" name="email" >
+                    <label for="cumpleGato"> Cumpleaños de tu Gato</label>
+                    <input type="date" placeholder="22/04/2022" required id="cumpleGato"  required name="cumpleGato" >
             </div>    
             <div class="inputContainer">
-                <label for="nombreMascota"> Nombre de su Mascota</label>
-                <input type="text" id="nombreMascota" placeholder="Ingrese el nombre de su mascota" required name="nombreMascota">
-            </div>
-            <div class="inputContainer">
-                <label for="tipoMascota"> Tipo de Mascota </label>
-                    <select name="tipoMascota" id="tipoMascota">
-                      <option value="perro">Perro</option>
+                <label for="sexoMascota"> Sexo de tu Mascota </label>
+                    <select name="sexoMascota" id="sexoMascota"  required>
+                      <option value="gata">Gata</option>
                       <option value="gato">Gato</option>
                     </select>
             </div>
             <div class="inputContainer">
-                    <label for="tamanoMascota"> Tamaño de tu mascota</label>
-                        <select name="tamanoMascota" id="tamanoMascota">
-                            <option value="chico">Chico</option>
-                            <option value="mediano">Mediano</option>
-                            <option value="grande">Grande </option>
-                        </select>
-                    
+                <label for="peso"> Peso en Kilogramos</label>
+                <input type="number" id="peso" placeholder="19"  required>
             </div>
             <div class="inputContainer">
-                <label for="peso"> Peso en Kilogramos</label>
-                <input type="number" id="peso" placeholder="10">
+                <label for="cirPata"> Circunferencia de la pata (cm)</label>
+                <input type="number" id="cirPata" placeholder="5"  required>
+            </div>
+            <div class="inputContainer">
+                <label for="largoPata"> Largo de la pata (cm)</label>
+                <input type="number" id="largoPata" placeholder="50"  required>
             </div>
             <input type="submit" value = "Calcular IMC" class="btn-calcular">
+            <br>
              
         </form>
         <div id="contenedorMascota" class="contenedorMascota"></div>
     </main>
     <footer class="piePagina">
-            <div class="contenedorPie">
-                <div class="contenedor-row">
-                    <div class="box">
-                        <h2> Nosotros - Grupo 9 - C 192</h2>
-                        <a href="#">Marcos Garcia marcosgarcia3105@gmail.com</a>
-                        <a href="#">Maria Suyay Videla Sanchez mail@gmail.com</a>
-                        <a href="#">Lorena Suarez casa.suarez1948@gmail.com</a>
-                        <a href="#">Lucas Garis mail@gmail.com</a>
-                        <a href="#">Jorge Siñaniz Valencia mail@gmail.com</a>
-                        
+        <div class="contenedorPie">
+            <div class="contenedor-row">
+                <div class="box">
+                    <h2> Argentina Programa 4.0</h2>
+                   
+                </div>
+                <div class="box">
+                  
+                </div>
+                <div class="box-redes">
+                    <div  class="redes">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
                     </div>
-    
-                    <div class="box">
-                        <h2>Contactanos</h2>
-                    </div>
-    
-                    <div class="box-redes">
-                        <h2>¡Seguinos!</h2>
-                        <div  class="redes">
-                                <i class="bi bi-facebook"></i>
-                                <i class="bi bi-youtube"></i>
-                                <i class="bi bi-twitter"></i>
-                        </div>
-    
-                    </div>
+
                 </div>
             </div>
-        </footer>
+        </div>
 
     <script src="./js/script.js"></script>
 </body>

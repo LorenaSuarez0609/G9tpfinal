@@ -4,9 +4,9 @@ const mascotas =[]
 
 const calcularIMC = () => { 
     let x= this.peso.value
-    let y= this.tipoMascota.value
-    let z= this.tamanoMascota.value
-    let calculo = x/5
+    let y= this.cirPata.value
+    let z= this.largoPata.value
+    let calculo = ((((y/0,70622)-z)/0,9156)-z)
     return calculo
 }
 
@@ -17,69 +17,33 @@ const renderzarMascotas = () => {
     for(const mascota of mascotas){
         let calculo = calcularIMC(mascota)
         console.log(calculo)
+        
         contenedorMascota.innerHTML += `
         <div class= imc-card>
-        <h2> Nombre Dueño: ${mascota.nombreDueno}</h2>
-        <p>Email: ${mascota.email}</p>
-        <p>Nombre Mascota: ${mascota.nombreMascota}</p>
-        <p>Tipo: ${mascota.tipoMascota}</p>
-        <p>Tamaño:${mascota.tamanoMascota}
-        <p>peso: ${mascota.peso}
+        <h2> Nombre Mascota: ${mascota.nombreMascota}</h2>
+        <p>Cumpleaños Mascota: ${mascota.cumpleGato}</p>
+        <p>Nombre Mascota: ${mascota.sexoMascota}</p>
+        <p>Peso: ${mascota.peso}</p>
+        <p>Circunsferencia Pata:${mascota.cirPata}
+        <p>Largo Pata: ${mascota.largoPata}</p>
         <p>Resultado IMC: ${calculo} </p>
-        
-                
+                     
         `
+        calculo = 0
     }
 } 
 formularioUsuarios.addEventListener("submit", (event) =>{
     event.preventDefault()
     
     mascotas.push({
-        nombreDueno: formularioUsuarios.nombreDueno.value,
-        email: formularioUsuarios.email.value,
         nombreMascota: formularioUsuarios.nombreMascota.value,
-        tipoMascota: formularioUsuarios.tipoMascota.value,
-        tamanoMascota: formularioUsuarios.tamanoMascota.value,
+        cumpleGato: formularioUsuarios.cumpleGato.value,
+        sexoMascota: formularioUsuarios.sexoMascota.value,
         peso: formularioUsuarios.peso.value,
+        cirPata: formularioUsuarios.cirPata.value,
+        largoPata: formularioUsuarios.largoPata.value,
         })
     renderzarMascotas()
 })
-const contenedorHTML = document.getElementById("selectRazas")
 
-const URL_API_RAZA = "https://api.thecatapi.com/v1/images/search?breed_ids="   /* id y url */
-const  URL_API =" https://api.thecatapi.com/v1/breeds"     /* id, name, description, life_span */
 
-fetch(URL_API)
-.then(response => response.json())
-.then(gatos => {
-
-        for(const razas of gatos){
-         contenedorHTML.innerHTML += `
-         <option value= "${razas.id}" data-info= "nombre":'{${razas.name},"descripcion":${razas.description},"anos:"${razas.life_span}}'>${razas.name}</option> 
-        ` 
-
-    }
-
-})
-
-function mostrarRaza(){
-    const listaDesplegable = document.getElementById("selectRazas")
-    const cardGatoHTML = document.getElementById("contenedorRaza")
-
-    const buscar = URL_API_RAZA+listaDesplegable.value
-    cardGatoHTML.innerHTML=`` 
-
-    fetch(buscar)
-    .then(response => response.json())
-    .then(gato =>{
-
-            var caturl = gato.url
-            cardGatoHTML.innerHTML +=`
-            <div class="cardGato">
-           
-            <img src=${gato[0].url}>
-            </div>`      
-
-    }) 
-
-}

@@ -4,11 +4,24 @@
     margin: 0px;
     padding: 0px;
     list-style: none; /**Elimina los puntos de la lista*/
-
+    
 }
 body{
     background-color: #f9fcff;
 }
+main{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+img{
+    width: 50%;
+    height: 70px;
+    
+}
+
 header{
     background-color: #3D5A80;
     display: flex;
@@ -23,10 +36,10 @@ header div{
     display: flex;
     flex-direction: row;
  }
-.encabezadoCeleste{
+ .encabezadoCeleste{
     width: 100%;
     height: 30px;
-    background-color: #98C1D9; 
+    background-color: #98C1D9;
     border-radius: 0px 0px 5px 5px;
     box-shadow:  0px 5px 7px rgba(0, 0, 0, 0.267);
 
@@ -34,7 +47,7 @@ header div{
 nav a{
     text-decoration: none;
     font-family:'Righteous', cursive;
-    color:rgb(61, 90, 128);;
+    color:#3D5A80;;
     padding-top: 2px;
     padding-right: 20px;
     transition: all .3s ease;
@@ -50,24 +63,64 @@ nav{
     padding-right: 10px;
 
 }
-img{
-    width: 50%;
-    height: 70px;
-    
-}
 
-main{
-    min-height: 40vh;
+.contenedorHTML{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-   
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 h1{
+     
+    font-family: 'Righteous', cursive;
     color: #3D5A80;
-    text-align: center;
     margin-right: 10px; /* desplaza hacia la derecha el Icono*/
+    
+}
+select{
+    font-size: 18px;
+}
+.selectRazas{
+    color: #3D5A80;
+    
+}
+.razas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.contenedorHTML{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contenedorRaza{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin-bottom: 20px;
+      
+}
+
+.cardGato{
+    background-color: #f9fcff;
+    color: white;
+    font-family:'Righteous', cursive;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.581);
+   
+}
+.cardGato img{
+    width:200px; 
+    height:100%;
+    border-radius: 5px;
 }
 .contenedorPie{
     color: white;
@@ -89,7 +142,6 @@ h1{
     padding: 0 15px;  
  
 }
-
 h2{
     font-size: 20px;
     color: white;
@@ -121,8 +173,8 @@ h2{
 .redes i{
     font-size: 38px;
     display: inline-block;
-    min-height: 40px;
-    width: 40px;
+    min-height: 30px;
+    width: 30px;
     background-color: rgb(61, 90, 128);
     margin: 0 10px 10px 0;
     text-align: center;
@@ -134,80 +186,12 @@ h2{
 .redes a:hover{
     background-color: rgb(152, 193, 217);
 }
-
-main form{
-    display: flex;
-    flex-direction: column;
-    gap:3vh;
-    width: 70%;
-    
-}
-main form .inputContainer{
-    border: none;
-    width: 100%;
-    color:rgb(161, 158, 158);
-    background-color: #F9FDFF;
-    flex-direction: column;
-    gap:1vh;
-
-
-}
-main form .inputContainer input, select{
-    border:none;
-    border-bottom: 1px solid black;
-    padding:10px;
-    font-size:18px;
-    background-color: #F9FDFF;
-
-}
-
-.btn-calcular{
-    background-color: #3D5A80;
-    color:white;
-    border: 1px solid rgb(57, 102, 236);
-    padding: 10px;
-    border-radius: 5px;
-    width:200px;
-    height:50px;
-    font-size: 18px;
-   }
-
-input,select{
-    font-size: 18px;
-}
-
-main form .inputContainer{
-    display:flex;
-    width: 100%;
-    flex-direction: column;
-    gap:1vh;
-}
-footer{
-    padding: 3vh 5vw;
-    background-color: #3D5A80;
-    color:rgb(41, 41, 41);
-}
-.contenedorMascota{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:30px;
-}
-.imc-card{
-    background-color: #3D5A80;
-    color:write;
-    padding:10px;
-    width: 300px;
-    border-radius: 5px;
-}
-
 @media screen and (max-width:800px)
 { 
     html{
         font-size: 12px;
-   
-    }
-    input,select{
+       }
+    select{
         font-size: 10px;
     }
     footer{
@@ -219,14 +203,12 @@ footer{
     html{
         font-size: 10px;
     }
-    input,select{
-        font-size: 8px;
+    select{
+        font-size: 10px;
     }
     footer{
         font-size: 8px;
     }
-    .contenedorMascota{
-        border-radius: 5px;
-    }
+    
 }
 

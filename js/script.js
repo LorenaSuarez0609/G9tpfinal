@@ -24,17 +24,18 @@ const renderzarMascotas = () => {
             open("./gatoflaco.html")
             
         }
-        else if(calculo<=25){
+        else {if(calculo<=25){
             estadoGato = "Tu gato esta perfecto"
             console.log(estadoGato)
-            open("./gatoflaco.html")
+            open("./gatook.html")
             
             } 
             else{ 
                 estadoGato = "Sobre peso"
                 console.log(estadoGato)
-                open("./gatoflaco.html")
+                open("./gatogordo.html")
             }
+        }
 
         contenedorMascota.innerHTML += `
         <div class= imc-card>

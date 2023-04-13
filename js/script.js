@@ -2,12 +2,12 @@ const formularioUsuarios = document.querySelector(".formularioUsuarios")
 const contenedorUsuarios = document.querySelector("#contenedorMascota")
 const mascotas =[]
 
-const calcularIMC = () => { 
-    let x= this.peso.value
-    let y= this.cirPata.value
-    let z= this.largoPata.value
-    let calculo = ((((y/0,70622)-z)/0,9156)-z)
-    return calculo
+const calcularIMC = (peso,cp,lp) => { 
+    var a = cp/0.70622;
+    var b = a-lp;
+    var c = b/0.9156;
+    var d = c-lp;
+    return d;
 }
 
 
@@ -15,21 +15,40 @@ const renderzarMascotas = () => {
     contenedorMascota.innerHTML=""
    
     for(const mascota of mascotas){
-        let calculo = calcularIMC(mascota)
+        let calculo = calcularIMC(mascota.peso, mascota.cirPanza, mascota.largoPata)
         console.log(calculo)
-        
+        let estadoGato =""
+        if(calculo <=10){
+            estadoGato = "Bajo Peso"
+            console.log(estadoGato)
+            
+        }
+        else if(calculo<=25){
+            estadoGato = "Tu gato esta perfecto"
+            console.log(estadoGato)
+            
+            } 
+            else{ 
+                estadoGato = "Sobre peso"
+                console.log(estadoGato)
+            }
+
+            
+
         contenedorMascota.innerHTML += `
         <div class= imc-card>
-        <h2> Nombre Mascota: ${mascota.nombreMascota}</h2>
-        <p>Cumpleaños Mascota: ${mascota.cumpleGato}</p>
-        <p>Nombre Mascota: ${mascota.sexoMascota}</p>
+        <h2>Nombre Mascota: ${mascota.nombreMascota}</h2>
+        <p>Cumpleaños: ${mascota.cumpleGato}</p>
+        <p>Sexo: ${mascota.sexoMascota}</p>
         <p>Peso: ${mascota.peso}</p>
-        <p>Circunsferencia Pata:${mascota.cirPata}
+        <p>Circunsferencia Pata:${mascota.cirPanza}
         <p>Largo Pata: ${mascota.largoPata}</p>
         <p>Resultado IMC: ${calculo} </p>
-                     
+        <p>Estado: ${estadoGato}</p>
+                             
         `
         calculo = 0
+        estadoGato=""
     }
 } 
 formularioUsuarios.addEventListener("submit", (event) =>{
@@ -40,7 +59,7 @@ formularioUsuarios.addEventListener("submit", (event) =>{
         cumpleGato: formularioUsuarios.cumpleGato.value,
         sexoMascota: formularioUsuarios.sexoMascota.value,
         peso: formularioUsuarios.peso.value,
-        cirPata: formularioUsuarios.cirPata.value,
+        cirPanza: formularioUsuarios.cirPanza.value,
         largoPata: formularioUsuarios.largoPata.value,
         })
     renderzarMascotas()

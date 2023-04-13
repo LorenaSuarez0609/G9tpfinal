@@ -33,6 +33,7 @@ header div{
 }
 
 nav a{
+    font-size: 18px;
     text-decoration: none;
     font-family:'Righteous', cursive;
     color:rgb(61, 90, 128);;
@@ -67,19 +68,39 @@ main{
     
 }
 .presentacion{
-    list-style-type: none;
+    list-style: none;
+    margin-left: 10px;
+    padding-left: 0;
+    padding: 30px;
+    
 }
-.presentacion li::before{
-    content: "$";
-    font-size: 25px;
-    margin-left: 30px;
-    padding: 10px;
+.presentacion li{
+    position: relative;
+    padding-left: 20px;
+}
+.presentacion li:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-image: url('../svg/patita.svg');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.imagenGatos img{
+    position: absolute;
+    width: 1800px;
+    height: 250px;
 }
 
 h1{
-    font-size: 30px;
+    font-size: 25px;
     color: #3D5A80;
-    text-align: center;
+    text-align: left;
+    margin-left: 10px ;
     margin-right: 10px; /* desplaza hacia la derecha el Icono*/
 }
 

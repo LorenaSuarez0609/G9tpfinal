@@ -10,7 +10,7 @@ body{
     background-color: #f9fcff;
 }
 main{
-    min-height: 40vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +72,7 @@ nav{
 }
 
 h1{
-     
+    font-size: 30px; 
     font-family: 'Righteous', cursive;
     color: #3D5A80;
     margin-right: 10px; /* desplaza hacia la derecha el Icono*/
@@ -138,7 +138,7 @@ select{
 }
 
 .piePagina .contenedorPie .box{   
-    width: 30%;
+    width: 40%;
     padding: 0 15px;  
  
 }
@@ -173,8 +173,8 @@ h2{
 .redes i{
     font-size: 38px;
     display: inline-block;
-    min-height: 30px;
-    width: 30px;
+    min-height: 40px;
+    width: 40px;
     background-color: rgb(61, 90, 128);
     margin: 0 10px 10px 0;
     text-align: center;
@@ -183,6 +183,7 @@ h2{
     color: white;
     transition: all .5s ease;
 }
+
 .redes a:hover{
     background-color: rgb(152, 193, 217);
 }

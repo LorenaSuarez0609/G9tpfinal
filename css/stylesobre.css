@@ -3,7 +3,7 @@
     font-family: 'Righteous', cursive;
     margin: 0px;
     padding: 0px;
-   
+    list-style: none; /**Elimina los puntos de la lista*/
 
 }
 body{
@@ -19,12 +19,11 @@ header{
     justify-content: space-around; 
      
 }
-
 header div{
     display: flex;
     flex-direction: row;
  }
-.encabezadoCeleste{
+ .encabezadoCeleste{
     width: 100%;
     height: 30px;
     background-color: #98C1D9; 
@@ -33,24 +32,99 @@ header div{
 
 }
 
-h1{
-    font-size: 18px;
-    color: #3D5A80;
+nav a{
+    text-decoration: none;
+    font-family:'Righteous', cursive;
+    color:rgb(61, 90, 128);;
+    padding-top: 2px;
+    padding-right: 20px;
+    transition: all .3s ease;
 }
-main {
+nav a:hover{
+   color: white;
+   text-shadow: 2px 2px 4px #000000;
+
+}
+nav{
     display: flex;
-    flex-direction: column;
-    gap:3vh;
-    width: 80%;
+    justify-content:right;
+    padding-right: 10px;
+
+}
+img{
+    width: 50%;
+    height: 70px;
     
 }
 
-.box i{
+main{
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    min-height: 70vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items:normal;
+    
+}
+.presentacion{
+    list-style-type: none;
+}
+.presentacion li::before{
+    content: "$";
+    font-size: 25px;
+    margin-left: 30px;
+    padding: 10px;
 }
 
+h1{
+    font-size: 30px;
+    color: #3D5A80;
+    text-align: center;
+    margin-right: 10px; /* desplaza hacia la derecha el Icono*/
+}
 
+.contenedorPie{
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.piePagina{
+    background-color: rgb(61, 90, 128);
+    padding: 40px 0px;  
+}
+.contenedor-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.piePagina .contenedorPie .box{   
+    width: 40%;
+    padding: 0 15px;  
+ 
+}
+.redes i{
+    font-size: 38px;
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(61, 90, 128);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+h2{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;        
+    font-weight: 500;
+    border-bottom: 2px solid rgb(152, 193, 217);
+    padding-bottom: 10px;
+    display: inline-block;
+}
 @media screen and (max-width:800px)
 { 
     html{

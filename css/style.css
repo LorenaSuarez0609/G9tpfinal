@@ -65,6 +65,7 @@ main{
 }
 
 h1{
+    font-size: 30px;
     color: #3D5A80;
     text-align: center;
     margin-right: 10px; /* desplaza hacia la derecha el Icono*/
@@ -85,7 +86,7 @@ h1{
 }
 
 .piePagina .contenedorPie .box{   
-    width: 30%;
+    width: 40%;
     padding: 0 15px;  
  
 }

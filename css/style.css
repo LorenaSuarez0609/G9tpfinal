@@ -42,7 +42,7 @@ img{
 /*//Main//*/
 
 main{
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,16 +102,12 @@ footer{
 
 .piePagina .contenedorPie .box{   
     width: 40%; 
- 
 }
-
 h3{
     font-size: 15px;
     color: white;
     margin-bottom: 25px;        
     font-weight: 500;
-    /*border-bottom: 2px solid rgb(152, 193, 217);
-    padding-bottom: 10px;*/
     display: inline-block;
 }
 .box a{
@@ -132,7 +128,7 @@ h3{
     flex-direction: row  ;    
 }
 .redes i{
-    font-size: 38px;
+    font-size: 20px;
     display: inline-block;
     min-height: 30px;
     width: 30px;
@@ -148,13 +144,12 @@ h3{
     background-color: rgb(152, 193, 217);
     color:rgb(61, 90, 128);
 }
-/*//  formulario/*/
 
 main form{
     display: flex;
     flex-direction: column;
     gap:3vh;
-    width: 70%;
+    width: 50%;
     
 }
 main form .inputContainer{
@@ -183,7 +178,7 @@ main form .inputContainer input, select{
     height:50px;
     font-size: 18px;
    }
-   input,select{
+input,select{
     font-size: 18px;
 }
 
@@ -209,6 +204,14 @@ main form .inputContainer{
     width: 300px;
     border-radius: 5px;
 }
+/*/ Estilo Medidas//*/
+
+.medidasGato img{
+    width:100%; 
+    height:100%;
+    border-radius: 5px;
+}
+
 
 /*//Estilos Razas //*/
 
@@ -294,7 +297,7 @@ select{
     width: 10px;
     height: 10px;
     position: absolute;
-    background-image: url('../svg/patita.svg');
+    background-image: url('../svg/Patitas\ azules.svg');
     background-size: cover;
     background-position: center;
     left: 0;

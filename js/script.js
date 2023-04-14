@@ -24,18 +24,19 @@ const renderzarMascotas = () => {
             open("./gatoflaco.html")
             
         }
-        else {if(calculo<=25){
-            estadoGato = "Tu gato esta perfecto"
-            console.log(estadoGato)
-            open("./gatook.html")
+        else {if(calculo<=25)
+            {
+                estadoGato = "Tu gato esta perfecto"
+                console.log(estadoGato)
+                open("./gatook.html")
             
             } 
             else{ 
                 estadoGato = "Sobre peso"
                 console.log(estadoGato)
                 open("./gatogordo.html")
+                }
             }
-        }
 
         contenedorMascota.innerHTML += `
         <div class= imc-card>
@@ -50,7 +51,7 @@ const renderzarMascotas = () => {
                              
         `
         calculo = 0
-        estadoGato=""
+        estadoGato =""
     }
 } 
 formularioUsuarios.addEventListener("submit", (event) =>{
